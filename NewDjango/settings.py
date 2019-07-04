@@ -11,9 +11,17 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 """
 
 import os
-
+import platform
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+if platform.system() == 'Windows':
+    DEBUG = True
+    GIT_CALLBACK_URL = 'http://127.0.0.1:8000/user/github_check'
+
+else:
+    DEBUG = False
+    GIT_CALLBACK_URL = 'http://www.caoyongqi.top/user/github_check'
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
@@ -22,7 +30,6 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '27s+3c%--6%9a^8h-!o0%#%6u3pktl5pxvy106vgb0^9og1j-d'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -147,7 +154,6 @@ MEIDA_ROOT = os.path.join(BASE_DIR, "static/media")
 
 GIT_ClIENT_ID = '80fd4509efb681b78554'
 GIT_ClIENT_SECRET = 'c48c99ed98f68b69e50addf088d3af01e48ba364'
-GIT_CALLBACK_URL = 'http://127.0.0.1:8000/user/github_check'
 
 # email
 EMAIL_USE_SSL = True
