@@ -24,7 +24,8 @@
                 </div>
             </div>
             <br>
-
+         {% empty %}
+            <p>啥也沒有 返回<a href="{% url 'Index:index' %}">首頁</a></p>
         {% endfor %}
 
     </ul>

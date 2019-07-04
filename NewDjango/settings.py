@@ -48,7 +48,7 @@ INSTALLED_APPS = [
     'mdeditor',
     'Index',
     'Articles',
-    'Spider',
+    'spider',
 
 
 ]

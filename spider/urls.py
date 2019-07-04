@@ -1,6 +1,6 @@
 from django.urls import path
 
-from Spider import views, youdao, cat
+from spider import views, youdao, cat
 
 app_name = 'spider'
 urlpatterns = [
