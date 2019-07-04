@@ -22,7 +22,7 @@ if platform.system() == 'Windows':
 else:
     DEBUG = False
     GIT_CALLBACK_URL = 'http://www.caoyongqi.top/user/github_check'
-
+    STATIC_ROOT = os.path.join(BASE_DIR,'static')
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
 
