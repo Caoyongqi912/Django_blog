@@ -155,7 +155,8 @@
                 </p>
 
             {% else %}
-                <h3 id="respond" style="color: black">请<a href="{% url 'User:login' %}?next={{ article.id }}">登录
+                <h3 id="respond" style="color: black">请<a href="{% url 'User:login' %}?next=
+{% url 'articles:detail' article.id %}">登录
                 </a>发表评论</h3>
             {% endif %}
 

@@ -40,23 +40,26 @@ class Register(View):
 
 class Login(View):
     def get(self, request):
-        return render(request, 'user/login.html')
+        next = request.GET.get('next','')
+        print('next',next)
+        return render(request, 'user/login.html', {'next': next})
 
     def post(self, request):
         form = LoginForm(request.POST)
         if form.is_valid():
+
             username = form.cleaned_data['username']
             password = form.cleaned_data['password']
             next = form.cleaned_data['next']
+
             user = authenticate(username=username, password=password)
             if user:
                 login(request, user)
                 request.session['is_login'] = True
                 request.session['user_name'] = username
                 if next:
-                    pass
-                else:
-                    return redirect(reverse('Index:index'))
+                    return HttpResponseRedirect(next)
+                return redirect(reverse('Index:index'))
         return render(request, 'user/login.html', {'msg': '请正确录入！'})
 
 
@@ -134,6 +137,8 @@ class ChangeInfo(View):
             user.save()
             return redirect(reverse('Index:index'))
         return render(request, 'user/chinfo.html', {'msg': '請正確輸入！'})
+
+
 # git
 def github_login(request):
     oauth_git = OAuth_github(GIT_ClIENT_ID, GIT_ClIENT_SECRET, GIT_CALLBACK_URL)
@@ -203,6 +208,7 @@ def github_check(request):
                       u'初始密码 123456 ！' \
                       u'请尽快更改！' % username
     return render_to_response('oauth/response.html', data)
+
 
 def bind_email(request):
     openid = request.GET.get('openid', request.POST.get('openid', ''))

@@ -51,7 +51,6 @@
             <ul>
                 <li><a href="{% url 'Index:index' %}" id="nav_list">首页</a></li>
                 <li id="nav_list"><a href="{% url 'Index:apply' %}">应用</a></li>
-                <li id="nav_list"><a href="{% url 'Index:about' %}">关于</a></li>
                 {% if request.user.is_authenticated %}
                     <li id="user"><a>{{ request.user.username }} &nbsp;&nbsp;&nbsp;
                         <span class="glyphicon glyphicon-chevron-down"></span></a>
@@ -64,6 +63,9 @@
                     <li id="nav_list"><a href="{% url 'User:register' %}">注册</a></li>
                 {% endif %}
 
+                {% block sidebar %}
+
+                {% endblock %}
 
             </ul>
         </div>
@@ -87,6 +89,8 @@
     <ul id="copyright">
         <li>&copy; Untitled.</li>
         <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+        <li><a href="{% url 'Index:about' %}">关于我</a></li>
+
     </ul>
 
 </div>

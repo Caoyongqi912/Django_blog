@@ -23,10 +23,22 @@
         <div class="col-xs-6 col-md-3">
 
             <a href="{% url 'spider:cat' %}" class="thumbnail">
-                <img src="{% static 'images/cat.png' %}" alt="" style="width: 100px; height: 60px  " class="img-rounded">
+                <img src="{% static 'images/cat.png' %}" alt="" style="width: 100px; height: 60px  "
+                     class="img-rounded">
+            </a>
+        </div>
+        <div class="col-xs-6 col-md-3">
+
+            <a href="{% url 'product:product' %}?next={% url 'product:product' %}" class="thumbnail" id="test">
+                <img src="{% static 'images/test.png'   %}" alt="" style="width: 100px; height:
+                60px  "
+                     class="img-rounded">
             </a>
         </div>
     </div>
 
 
+{% endblock %}
+
+{% block js %}
 {% endblock %}

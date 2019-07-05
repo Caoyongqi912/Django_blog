@@ -48,7 +48,15 @@ INSTALLED_APPS = [
     'mdeditor',
     'Index',
     'Articles',
+    'Product',
     'spider',
+    'Pro_Api',
+    'Pro_App',
+    'Pro_Bug',
+    'Pro_Web',
+    'Pro_report',
+    'Pro_Set',
+
 
 
 ]
