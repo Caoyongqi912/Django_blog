@@ -1,14 +1,24 @@
 {% extends 'base.html' %}
-
-
-{% block sidebar %}
-    <li id="nav_list"><a href="{% url 'pro_set:set' %}">产品设置</a></li>
-
+{% block title %}
+    Test
 {% endblock %}
 
 
+
 {% block post %}
-    <h2>产品</h2>
+    {% block nav_tab %}
+        <ul class="nav nav-tabs">
+            <li role="presentation" class="active"><a href="{% url 'product:product' %}">产品中心</a></li>
+            <li role="presentation"><a href="">用例管理</a></li>
+            <li role="presentation"><a href="">定時任務</a></li>
+            <li role="presentation"><a href="">BUG管理</a></li>
+            <li role="presentation"><a href="{% url 'pro_rep:report' %}">测试报告</a></li>
+            <li role="presentation"><a href="{% url 'pro_set:set' %}">设置</a></li>
+
+        </ul>
+    {% endblock %}
+    <br><br>
+
     <table class="table table-bordered">
         <tr class="warning">
             <th></th>
@@ -29,7 +39,7 @@
                 <td>{{ p.create_time }}</td>
                 <td><a href="{% url 'product:product_detail' p.id %} ">详细</a>
                     {% if request.user.is_authenticated %}
-                        <a href="{% url 'pro_rep:report' p.id%}">/&nbsp;报告</a>
+{#                        <a href="{% url 'pro_rep:report' p.id %}">/&nbsp;报告</a>#}
                         <a href="" id="del">/&nbsp;删除</a>
 
                     {% endif %}

@@ -48,3 +48,24 @@ class ApiTestStep(models.Model):
         db_table = 'ApiTestStep'
         verbose_name = '用例方法'
         verbose_name_plural = verbose_name
+
+
+
+
+class Apis(models.Model):
+    product = models.ForeignKey(Product, on_delete=models.CASCADE, null=True, verbose_name='产品')
+    api_name = models.CharField(max_length=100, verbose_name='接口名称')
+    api_url = models.CharField(max_length=200, verbose_name='url地址')
+    api_par_val = models.CharField(max_length=800, verbose_name='请求参数和值')
+    api_method = models.CharField(choices=REQUEST_METHOD, default='get', max_length=200, verbose_name='请求参数')
+    api_result = models.CharField(max_length=200, verbose_name='预期结果')
+    api_status = models.BooleanField(verbose_name='是否通过')
+    create_time = models.DateTimeField(auto_now=True, verbose_name='创建时间')
+
+    def __str__(self):
+        return self.api_name
+
+    class Meta:
+        db_table = 'Apis'
+        verbose_name = '单一场景接口'
+        verbose_name_plural = verbose_name

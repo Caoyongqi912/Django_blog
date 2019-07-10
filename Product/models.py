@@ -7,7 +7,7 @@ from User.models import User
 class Product(models.Model):
     product_name = models.CharField(max_length=64, verbose_name='产品名称')
     product_desc = models.CharField(max_length=200, verbose_name='产品描述')
-    producter = models.ForeignKey(User, verbose_name='产品负责人', on_delete=models.CASCADE)
+    producter = models.ForeignKey(User, verbose_name='产品负责人', on_delete=models.CASCADE,null=True)
     create_time = models.DateTimeField(auto_now=True, verbose_name='增加时间')
 
     def __str__(self):

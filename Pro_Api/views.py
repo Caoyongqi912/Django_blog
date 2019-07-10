@@ -3,7 +3,7 @@ from django.shortcuts import render
 # Create your views here.
 from django.views.generic.base import View
 
-from Pro_Api.models import ApiTest, ApiTestStep
+from Pro_Api.models import ApiTest, ApiTestStep, Apis
 from Product.models import Product
 
 
@@ -25,3 +25,8 @@ class Method(View):
 
 
 
+class ApisView(View):
+    def get(self,request):
+        usernaem = request.user.username
+        apis = Apis.objects,all()
+        return render(request,'apply/product/api/apis.html',{'username':usernaem,'apis':apis})

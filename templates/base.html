@@ -27,6 +27,9 @@
     <div class="inner">
         <!-- Post -->
         {% block post %}
+            {% block nav_tab %}
+            
+            {% endblock %}
         {% endblock %}
 
         {% block comment %}
@@ -45,6 +48,7 @@
     <!-- Logo -->
     <h1 id="logo"><a href="{% url 'Index:index' %}">CYQ's Blog</a></h1>
 
+
     <!-- Nav -->
     <nav id="nav">
         <div class="dropdown">
@@ -59,6 +63,7 @@
                     <li class="users"><a href="{% url 'User:quit' %}">退出</a></li>
 
                 {% else %}
+
                     <li id="nav_list"><a href="{% url 'User:login' %}">登录</a></li>
                     <li id="nav_list"><a href="{% url 'User:register' %}">注册</a></li>
                 {% endif %}
