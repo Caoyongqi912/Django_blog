@@ -2,33 +2,80 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ab3eafa-a3a8-4cc6-877c-7de410df514b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a71c736c-6120-4c70-8016-6185897920cb.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a71c736c-6120-4c70-8016-6185897920cb.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Django_blog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Django_blog.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Articles/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Articles/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NewDjango/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewDjango/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pro_Api/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pro_Api/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pro_Api/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pro_Api/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pro_Api/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pro_Api/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pro_App/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pro_App/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pro_App/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pro_App/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pro_App/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pro_App/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pro_Web/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pro_Web/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pro_Web/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pro_Web/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pro_report/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pro_report/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pro_report/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pro_report/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pro_report/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Product/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Product/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Product/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Product/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/apply/product/api/api_report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/apply/product/app/appcase.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/apply/product/app/appcase.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/apply/product/bug/bug.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/apply/product/bug/bug.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/apply/product/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/apply/product/product.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/apply/product/product_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/apply/product/product_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/apply/product/report/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/apply/product/report/report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/apply/product/set/set.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/apply/product/set/set.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/apply/product/web/web_case.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/apply/product/web/web_case.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/apply/product/web/web_case_step.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/apply/product/web/web_case_step.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pro_Api/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pro_Api/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pro_Api/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pro_Api/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pro_Api/migrations/0002_auto_20190705_1140.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pro_Api/migrations/0003_apis.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pro_Api/migrations/0004_auto_20190709_1610.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pro_Api/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pro_Api/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pro_Api/testcase.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pro_Api/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pro_Api/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pro_App/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pro_App/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pro_App/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pro_App/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pro_App/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pro_App/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pro_App/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pro_App/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pro_Bug/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pro_Bug/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pro_Bug/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pro_Bug/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pro_Bug/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pro_Bug/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pro_Bug/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pro_Bug/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pro_Set/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pro_Set/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pro_Set/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pro_Set/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pro_Set/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pro_Set/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pro_Set/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pro_Set/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pro_Web/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pro_Web/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pro_Web/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pro_Web/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pro_Web/migrations/0002_auto_20190705_1034.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pro_Web/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pro_Web/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pro_Web/testcase.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pro_Web/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pro_Web/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pro_Web/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pro_report/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pro_report/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pro_report/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pro_report/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pro_report/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pro_report/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pro_report/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Product/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Product/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Product/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Product/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Product/migrations/0002_auto_20190704_1403.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Product/migrations/0003_apitest_apiteststep.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Product/migrations/0004_bug.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Product/migrations/0005_set.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Product/migrations/0006_appcase_appcasestep.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Product/migrations/0007_auto_20190705_1006.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Product/migrations/0008_auto_20190709_1631.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Product/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Product/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Product/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Product/views.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -56,107 +103,15 @@
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="-622411729">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="2" />
-          <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.1086" value="1" />
-          <entry key="project.open.time.26" value="1" />
-          <entry key="project.opened" value="3" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="Articles" value="2" />
-          <entry key="Comments" value="2" />
-          <entry key="Product" value="2" />
-          <entry key="User" value="3" />
-          <entry key="cat_eyes" value="2" />
-          <entry key="html" value="98" />
-          <entry key="jpg" value="1" />
-          <entry key="py" value="162" />
-          <entry key="spider_quanji" value="1" />
-          <entry key="sql" value="2" />
-          <entry key="txt" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="Database Element" value="12" />
-          <entry key="HTML" value="98" />
-          <entry key="Image" value="1" />
-          <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="162" />
-          <entry key="Scratch" value="2" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="cell" value="2" />
-          <entry key="html" value="3252" />
-          <entry key="py" value="11623" />
-          <entry key="txt" value="10" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="HTML" value="3252" />
-          <entry key="PLAIN_TEXT" value="10" />
-          <entry key="Python" value="11623" />
-          <entry key="Scratch" value="2" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Pro_Web/testcase.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-315">
-              <caret line="18" column="20" lean-forward="true" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-                <marker date="1562677540180" expanded="true" signature="429:431" ph="..." />
-                <marker date="1562677540180" expanded="true" signature="496:587" ph="..." />
-                <marker date="1562677540180" expanded="true" signature="581:582" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Pro_Web/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="6" column="86" selection-start-line="6" selection-start-column="86" selection-end-line="6" selection-end-column="86" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/apply/product/web/web_case.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="22" column="53" selection-start-line="22" selection-start-column="53" selection-end-line="22" selection-end-column="53" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Pro_Web/models.py">
+        <entry file="file://$PROJECT_DIR$/NewDjango/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="34" column="17" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="17" />
+            <state relative-caret-position="-1242">
+              <caret line="50" selection-start-line="50" selection-end-line="50" />
               <folding>
-                <element signature="e#0#28#0" expanded="true" />
-                <marker date="1562294085713" expanded="true" signature="151:156" ph="..." />
-                <marker date="1562294085713" expanded="true" signature="747:752" ph="..." />
+                <element signature="e#310#319#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -203,7 +158,6 @@
         <option value="$PROJECT_DIR$/Pro_Web/admin.py" />
         <option value="$PROJECT_DIR$/Pro_Apis/admin.py" />
         <option value="$PROJECT_DIR$/Pro_Apis/models.py" />
-        <option value="$PROJECT_DIR$/NewDjango/settings.py" />
         <option value="$PROJECT_DIR$/Pro_Api/admin.py" />
         <option value="$PROJECT_DIR$/Pro_Api/models.py" />
         <option value="$PROJECT_DIR$/Pro_Bug/models.py" />
@@ -229,20 +183,15 @@
         <option value="$PROJECT_DIR$/Pro_Web/urls.py" />
         <option value="$PROJECT_DIR$/templates/apply/product/web/web_case.html" />
         <option value="$PROJECT_DIR$/Pro_Web/testcase.py" />
+        <option value="$PROJECT_DIR$/NewDjango/settings.py" />
       </list>
     </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="162" />
-    <option name="y" value="12" />
-    <option name="width" value="1794" />
-    <option name="height" value="984" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1987" />
+    <option name="y" value="25" />
+    <option name="width" value="1853" />
+    <option name="height" value="1055" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -270,21 +219,6 @@
               <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="apply" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Django_blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Django_blog" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="apply" type="462c0819:PsiDirectoryNode" />
-              <item name="product" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Django_blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Django_blog" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="apply" type="462c0819:PsiDirectoryNode" />
-              <item name="product" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -295,13 +229,14 @@
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/fanhonglian/Desktop/Django_blog/Product/urls.py" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -397,8 +332,13 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1562204162309</updated>
+      <workItem from="1562739668085" duration="524000" />
+      <workItem from="1562740311643" duration="1937000" />
     </task>
     <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="2461000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -410,10 +350,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="130" y="10" width="1435" height="787" extended-state="0" />
-    <editor active="true" />
+    <frame x="1987" y="25" width="1853" height="1055" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1902687" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18933925" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -427,7 +366,7 @@
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.33027524" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.3345238" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -435,6 +374,8 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" />
       <window_info anchor="right" id="Database" order="4" weight="0.21713871" />
+      <window_info anchor="right" id="R Graphics" order="5" />
+      <window_info anchor="right" id="R Packages" order="6" />
     </layout>
     <layout-to-restore>
       <window_info id="Favorites" order="0" side_tool="true" />
@@ -463,9 +404,6 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Product/views.py">
@@ -503,7 +441,7 @@
     <entry file="das://a71c736c-6120-4c70-8016-6185897920cb/schema/blog/table/Articles">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
-          <filtering enabled="true" />
+          <filtering />
         </state>
       </provider>
     </entry>
@@ -514,13 +452,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/comment_img/2019/07/09/timg.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/comment_img/2019/07/09/timg.jpg" />
     <entry file="das://a71c736c-6120-4c70-8016-6185897920cb/schema/blog/table/Comments">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
-          <filtering enabled="true" />
+          <filtering />
         </state>
       </provider>
     </entry>
@@ -554,17 +490,11 @@
     <entry file="das://a71c736c-6120-4c70-8016-6185897920cb/schema/blog/table/User">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
-          <filtering enabled="true" />
+          <filtering />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/user/index5.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/user/index5.html" />
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
@@ -596,23 +526,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Pro_Apis/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Pro_Apis/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="6" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Pro_Apis/models.py" />
+    <entry file="file://$PROJECT_DIR$/Pro_Apis/admin.py" />
     <entry file="file://$PROJECT_DIR$/Pro_Bug/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -636,7 +551,6 @@
           <caret line="7" column="16" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="16" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
-            <marker date="1562661108122" expanded="true" signature="117:121" ph="..." />
           </folding>
         </state>
       </provider>
@@ -757,16 +671,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NewDjango/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-540">
-          <caret line="53" column="14" lean-forward="true" selection-start-line="53" selection-start-column="14" selection-end-line="53" selection-end-column="14" />
-          <folding>
-            <element signature="e#310#319#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Pro_report/models.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -784,13 +688,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/apply/product/api/api_report.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/apply/product/api/api_report.html" />
     <entry file="file://$PROJECT_DIR$/Pro_Api/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -846,13 +744,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Program Files/Python36/Lib/unittest/case.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-775">
-          <caret line="340" column="6" selection-start-line="340" selection-start-column="6" selection-end-line="340" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://C:/Program Files/Python36/Lib/unittest/case.py" />
     <entry file="file://$PROJECT_DIR$/templates/apply/product/web/web_case.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="318">
@@ -860,37 +752,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Pro_Web/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="86" selection-start-line="6" selection-start-column="86" selection-end-line="6" selection-end-column="86" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Pro_Web/testcase.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-315">
-          <caret line="18" column="20" lean-forward="true" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+        <state relative-caret-position="227">
+          <caret line="17" column="41" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
-            <marker date="1562677540180" expanded="true" signature="429:431" ph="..." />
-            <marker date="1562677540180" expanded="true" signature="496:587" ph="..." />
-            <marker date="1562677540180" expanded="true" signature="581:582" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Pro_Web/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="34" column="17" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="17" />
+        <state relative-caret-position="492">
+          <caret line="31" column="15" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="15" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
-            <marker date="1562294085713" expanded="true" signature="151:156" ph="..." />
-            <marker date="1562294085713" expanded="true" signature="747:752" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pro_Web/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NewDjango/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1242">
+          <caret line="50" selection-start-line="50" selection-end-line="50" />
+          <folding>
+            <element signature="e#310#319#0" expanded="true" />
           </folding>
         </state>
       </provider>
