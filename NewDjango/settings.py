@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 
 import os
 import platform
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -22,9 +23,7 @@ if platform.system() == 'Windows':
 else:
     DEBUG = False
     GIT_CALLBACK_URL = 'http://www.caoyongqi.top/user/github_check'
-    STATIC_ROOT = os.path.join(BASE_DIR,'static')
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
+    STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '27s+3c%--6%9a^8h-!o0%#%6u3pktl5pxvy106vgb0^9og1j-d'
@@ -49,8 +48,7 @@ INSTALLED_APPS = [
     'Index',
     'Articles',
     'spider',
-
-
+    'Api'
 
 ]
 
@@ -148,7 +146,6 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),
 )
-
 # 指定 MEDIA_URL 的位置
 MEDIA_URL = '/static/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, "static/media")

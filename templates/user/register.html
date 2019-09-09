@@ -65,23 +65,21 @@
     <script>
         $('#inputSuccess1').blur(function () {
             var values = $('#inputSuccess1').val();
-            console.log(values);
             if (values == '') {
                 $('#errorname').text('用户名不能为空！');
                 $('#input_name').addClass('glyphicon glyphicon-remove form-control-feedback');
                 $('#name_1').removeClass('has-success').addClass('has-error');
 
             } else {
-
                 $.post('{% url "User:register_check" %}', {
                     username: values,
                     csrfmiddlewaretoken: "{{ csrf_token }}"
                 }, function (data) {
-                    if (data.name = 'ok') {
+                    if (data.name == 'ok') {
                         $('#input_name').removeClass('glyphicon glyphicon-remove form-control-feedback').addClass('glyphicon glyphicon-ok form-control-feedback');
                         $('#name_1').addClass('has-success').removeClass('has-error');
                         $('#errorname').text('')
-                    } else if (data.name == 'fail') {
+                    } else if (data.name = 'fail') {
                         $('#input_name').addClass('glyphicon glyphicon-remove form-control-feedback');
                         $('#name_1').removeClass('has-success').addClass('has-error');
                         $('#errorname').text('用户名存在！')
@@ -149,8 +147,10 @@
                         $('#ema').removeClass('has-success').addClass('has-error');
                     } else {
                         $('#erroremail').text('');
-                        $('#email').removeClass('glyphicon glyphicon-remove form-control-feedback').addClass('glyphicon glyphicon-ok form-control-feedback');
+                        $('#input_email').removeClass('glyphicon glyphicon-remove form-control-feedback').addClass('glyphicon glyphicon-ok form-control-feedback');
                         $('#ema').removeClass('has-error').addClass('has-success')
+
+
                     }
 
                 });

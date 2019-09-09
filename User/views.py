@@ -35,13 +35,13 @@ class Register(View):
 
             return redirect(reverse('User:login'))
         else:
-            return render(request, 'user/register.html', {'msg': '請爭取輸入！'})
+            return render(request, 'user/register.html', {'msg': '請正確輸入！'})
 
 
 class Login(View):
     def get(self, request):
-        next = request.GET.get('next','')
-        print('next',next)
+        next = request.GET.get('next', '')
+        print('next', next)
         return render(request, 'user/login.html', {'next': next})
 
     def post(self, request):
@@ -51,16 +51,18 @@ class Login(View):
             username = form.cleaned_data['username']
             password = form.cleaned_data['password']
             next = form.cleaned_data['next']
-
             user = authenticate(username=username, password=password)
-            if user:
+            if user is not None and user.is_active:
                 login(request, user)
                 request.session['is_login'] = True
                 request.session['user_name'] = username
                 if next:
                     return HttpResponseRedirect(next)
                 return redirect(reverse('Index:index'))
-        return render(request, 'user/login.html', {'msg': '请正确录入！'})
+            else:
+                return render(request, 'user/login.html', {'msg': '賬號密碼錯誤！'})
+        else:
+            return render(request, 'user/login.html', {'msg': '请正确录入！'})
 
 
 class Quit(View):
@@ -74,6 +76,8 @@ class RegisterCheck(View):
     def post(self, request):
         username = request.POST.get('username', '')
         email = request.POST.get('email', '')
+        print(username)
+        print(email)
         if username:
             user = User.objects.filter(username=username)
             if user:

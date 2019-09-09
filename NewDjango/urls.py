@@ -6,9 +6,7 @@ urlpatterns = [
     path('', include('Index.urls', namespace='Index')),
     path('spider/', include('spider.urls', namespace='spider')),
     path('user/', include('User.urls', namespace='User')),
-    path('articles/',include('Articles.urls',namespace='articles')),
-
-
-
+    path('articles/', include('Articles.urls', namespace='articles')),
+    path('url/', include('Api.urls', namespace='Api'))
 
 ]
