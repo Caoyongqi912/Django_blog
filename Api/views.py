@@ -17,19 +17,12 @@ class Api_send(View):
     def post(self, request):
         url = request.POST.get('url', '')
         method = request.POST.get("method", '')
-        res = RequestPool().requestTool(method, url)
-        if res:
-            res = json.dumps(json.loads(res.text), indent=4)
-            data = {
-                'status': 'ok',
-                'res': res
-            }
-            return JsonResponse(data)
-        else:
-            data = {
-                'status': 'err'
-            }
-            return JsonResponse(data)
+        res = RequestPool().requestTool(method=method, url=url)
+        data = {
+            'status': 'ok',
+            'res': res.text
+        }
+        return JsonResponse(data)
 
 
 class RequestPool:
@@ -37,11 +30,10 @@ class RequestPool:
         self.res = None
 
     def requestTool(self, method, url, headers=None):
-
         if method == 'GET':
             try:
                 self.res = requests.get(url=url, headers=headers)
-            except Exception:
+            except Exception as e:
                 return False
         elif method == "POST":
             try:
@@ -53,7 +45,7 @@ class RequestPool:
                 self.res = requests.put(url=url, headers=headers)
             except Exception as e:
                 return False
-        else:
+        elif method == 'DELETE':
             try:
                 self.res = requests.delete(url=url, headers=headers)
             except Exception as e:

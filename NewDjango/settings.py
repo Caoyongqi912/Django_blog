@@ -35,7 +35,7 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
-    'suit',
+    # 'suit',
     'gunicorn',
     'django.contrib.admin',
     'django.contrib.auth',

@@ -84,17 +84,11 @@
                     csrfmiddlewaretoken: '{{ csrf_token }}'
                 }, function (data) {
                     console.log(data);
-                    if (data.status == 'ok') {
-                        var result = JSON.stringify(JSON.parse(data.res), null, 4);
-                        console.log(result)
-                        $('#text_res').text(result)
-
-                    } else {
-
-                        $('#text_res').text('错误')
+                    var result = JSON.stringify(JSON.parse(data.res), null, 4);
+                    console.log(result);
+                    $('#text_res').text(result)
 
 
-                    }
                 }
             )
 
