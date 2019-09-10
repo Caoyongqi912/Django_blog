@@ -2,12 +2,119 @@
 {% block title %}
     Request
 {% endblock %}
-
-
 {% block post %}
+    <form action="{% url 'Api:send' %}" method="post">
+        {% csrf_token %}
 
-    <p>wait..</p>
+        <div class="input-group">
+            <div class="input-group-btn">
+                <button id="but_val" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">GET
+                </button>
+                <input type="hidden" name="hidedrop_1" id="hidedrop_1"/>
+                <ul class="dropdown-menu">
+                    <li><a href="#" id="GET">GET</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#" id="POST">POST</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#" id="PUT">PUT</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#" id="DELETE">DELETE</a></li>
+                </ul>
+            </div>
+            <input type="text" class="form-control" aria-label="..." placeholder="Enter request URL" id="url">
+            <span class="input-group-btn">
+        <button class="btn btn-success" type="button" id="send">Send </button>
+      </span>
+        </div>
+        <br>
+        <div class="hidden alert-danger" role="alert" id="err">
+            <a href="#" class="alert-link">路由不能为空..</a>
+        </div>
+    </form>
+    <!-- Split button -->
+    <br><br><br>
+    <div>
+
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Params</a>
+            </li>
+            <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Headers</a>
+            </li>
+
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="home">
+                Wait..
+            </div>
+            <div role="tabpanel" class="tab-pane" id="profile">Wait..</div>
+
+        </div>
+
+    </div>
+    <br><br><br><br>
+    <div class="well"><textarea class="form-control" rows="7" id="text_res"></textarea>
+    </div>
+
+
 
 
 {% endblock %}
 
+{% block js %}
+    <script>
+        $('#send').click(function () {
+            var url = $('#url').val();
+            var but = $('#but_val').text();
+            console.log(url);
+            console.log(but);
+            if (url == '') {
+                $('#err').removeClass('hidden').addClass('alert')
+            } else if (url !== '') {
+                $('#err').removeClass('alert').addClass('hidden')
+
+            } else {
+            }
+            $.post('{% url "Api:send" %}', {
+                    'url': url,
+                    'method': but,
+                    csrfmiddlewaretoken: '{{ csrf_token }}'
+                }, function (data) {
+                    console.log(data);
+                    if (data.status == 'ok') {
+                        var result = JSON.stringify(JSON.parse(data.res), null, 4);
+                        console.log(result)
+                        $('#text_res').text(result)
+
+                    } else {
+
+                        $('#text_res').text('错误')
+
+
+                    }
+                }
+            )
+
+        });
+
+
+        $("#DELETE").click(function () {
+            $('#but_val').text("DELETE");
+        });
+        $('#PUT').click(function () {
+            $('#but_val').text('PUT')
+        });
+        $('#POST').click(function () {
+            $('#but_val').text('POST')
+        });
+        $('#GET').click(function () {
+            $('#but_val').text('GET')
+        });
+    </script>
+
+
+
+{% endblock %}
