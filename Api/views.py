@@ -34,21 +34,13 @@ class RequestPool:
             try:
                 self.res = requests.get(url=url, headers=headers)
             except Exception as e:
+                print(e)
                 return False
-        elif method == "POST":
+        else:
             try:
                 self.res = requests.post(url=url, headers=headers)
             except Exception as e:
-                return False
-        elif method == "PUT":
-            try:
-                self.res = requests.put(url=url, headers=headers)
-            except Exception as e:
-                return False
-        elif method == 'DELETE':
-            try:
-                self.res = requests.delete(url=url, headers=headers)
-            except Exception as e:
+                print(e)
                 return False
 
         return self.res
