@@ -87,7 +87,11 @@
                     var str = 'html';
                     if (data.res.indexOf(str) > -1) {
                         $('#text_res').text(data.res);
+                    } else if (data.res == 'fail') {
+                        $('#text_res').text('错误')
+
                     } else {
+
                         var result = JSON.stringify(JSON.parse(data.res), null, 4);
                         $('#text_res').text(result)
                     }

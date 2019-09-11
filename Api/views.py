@@ -16,11 +16,16 @@ class Api_send(View):
     def post(self, request):
         url = request.POST.get('url', '')
         method = request.POST.get("method", '')
-        res = RequestPool().requestTool(method=method, url=url)
-        data = {
-            'status': 'ok',
-            'res': res.text
-        }
-        return JsonResponse(data)
-
-
+        if url and method:
+            res = RequestPool().requestTool(method=method.strip(), url=url.strip())
+            data = {
+                'status': 'ok',
+                'res': res.text,
+                'code': res.status_code
+            }
+            return JsonResponse(data)
+        else:
+            data = {
+                'res': 'fail'
+            }
+            return JsonResponse(data)
