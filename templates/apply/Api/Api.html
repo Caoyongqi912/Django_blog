@@ -35,8 +35,6 @@
     <!-- Split button -->
     <br><br><br>
     <div>
-
-        <!-- Nav tabs -->
         <ul class="nav nav-tabs" role="tablist">
             <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Params</a>
             </li>
@@ -44,24 +42,127 @@
             </li>
 
         </ul>
-
-        <!-- Tab panes -->
         <div class="tab-content">
             <div role="tabpanel" class="tab-pane active" id="home">
-                Wait..
+                <br><br><br>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="input-group">
+                              <span class="input-group-addon">
+                                <input type="checkbox" aria-label="...">
+                              </span>
+                            <input type="text" class="form-control" aria-label="..." placeholder="wait..">
+                        </div><!-- /input-group -->
+                    </div><!-- /.col-lg-6 -->
+                    <div class="col-lg-6">
+                        <div class="input-group">
+                              <span class="input-group-addon">
+                                <input type="radio" aria-label="...">
+                              </span>
+                            <input type="text" class="form-control" aria-label="...">
+                        </div><!-- /input-group -->
+                    </div><!-- /.col-lg-6 -->
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="input-group">
+                              <span class="input-group-addon">
+                                <input type="checkbox" aria-label="...">
+                              </span>
+                            <input type="text" class="form-control" aria-label="...">
+                        </div><!-- /input-group -->
+                    </div><!-- /.col-lg-6 -->
+                    <div class="col-lg-6">
+                        <div class="input-group">
+                              <span class="input-group-addon">
+                                <input type="radio" aria-label="...">
+                              </span>
+                            <input type="text" class="form-control" aria-label="...">
+                        </div><!-- /input-group -->
+                    </div><!-- /.col-lg-6 -->
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="input-group">
+                              <span class="input-group-addon">
+                                <input type="checkbox" aria-label="...">
+                              </span>
+                            <input type="text" class="form-control" aria-label="...">
+                        </div><!-- /input-group -->
+                    </div><!-- /.col-lg-6 -->
+                    <div class="col-lg-6">
+                        <div class="input-group">
+                              <span class="input-group-addon">
+                                <input type="radio" aria-label="...">
+                              </span>
+                            <input type="text" class="form-control" aria-label="...">
+                        </div><!-- /input-group -->
+                    </div><!-- /.col-lg-6 -->
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="input-group">
+                              <span class="input-group-addon">
+                                <input type="checkbox" aria-label="...">
+                              </span>
+                            <input type="text" class="form-control" aria-label="...">
+                        </div><!-- /input-group -->
+                    </div><!-- /.col-lg-6 -->
+                    <div class="col-lg-6">
+                        <div class="input-group">
+                              <span class="input-group-addon">
+                                <input type="radio" aria-label="...">
+                              </span>
+                            <input type="text" class="form-control" aria-label="...">
+                        </div><!-- /input-group -->
+                    </div><!-- /.col-lg-6 -->
+                </div>
             </div>
-            <div role="tabpanel" class="tab-pane" id="profile">Wait..</div>
 
+            <div role="tabpanel" class="tab-pane" id="profile"><br><br><br>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="input-group">
+                              <span class="input-group-addon">
+                                <input type="checkbox" aria-label="...">
+                              </span>
+                            <input type="text" class="form-control" aria-label="..." value="User-Agent"
+                                   placeholder="User-Agent:" readonly>
+                        </div>
+                        <br>
+                        <div class="input-group">
+                              <span class="input-group-addon">
+                                <input type="checkbox" aria-label="...">
+                              </span>
+                            <input type="text" class="form-control" aria-label="..." value="Host"
+                                   placeholder="Host:" readonly>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="input-group">
+                              <span class="input-group-addon">
+                                <input type="radio" aria-label="...">
+                              </span>
+                            <input type="text" class="form-control" aria-label="..." id="Ua" placeholder="输入没用。">
+                        </div>
+                        <br>
+                        <div class="input-group">
+                              <span class="input-group-addon">
+                                <input type="radio" aria-label="...">
+                              </span>
+                            <input type="text" class="form-control" aria-label="..." id="Host">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
     </div>
     <br><br><br><br>
     <div class="well"><textarea class="form-control" rows="7" id="text_res"></textarea>
     </div>
-
-
-
-
 {% endblock %}
 
 {% block js %}
@@ -101,8 +202,6 @@
             )
 
         });
-
-
         $("#DELETE").click(function () {
             $('#but_val').text("DELETE");
         });
