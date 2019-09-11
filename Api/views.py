@@ -1,11 +1,10 @@
-import json
-
-import requests
 from django.http import JsonResponse
 from django.shortcuts import render
 
 # Create your views here.
 from django.views.generic.base import View
+
+from common.RequestPool import RequestPool
 
 
 class Api_test(View):
@@ -25,22 +24,3 @@ class Api_send(View):
         return JsonResponse(data)
 
 
-class RequestPool:
-    def __init__(self):
-        self.res = None
-
-    def requestTool(self, method, url, headers=None):
-        if method == 'GET':
-            try:
-                self.res = requests.get(url=url, headers=headers)
-            except Exception as e:
-                print(e)
-                return False
-        else:
-            try:
-                self.res = requests.post(url=url, headers=headers)
-            except Exception as e:
-                print(e)
-                return False
-
-        return self.res
