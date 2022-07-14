@@ -150,8 +150,8 @@ STATICFILES_DIRS = (
 MEDIA_URL = '/static/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, "static/media")
 
-GIT_ClIENT_ID = '80fd4509efb681b78554'
-GIT_ClIENT_SECRET = 'c48c99ed98f68b69e50addf088d3af01e48ba364'
+GIT_ClIENT_ID = 'xx'
+GIT_ClIENT_SECRET = 'xx'
 
 # email
 EMAIL_USE_SSL = True
